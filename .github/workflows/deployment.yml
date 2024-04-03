@@ -40,5 +40,5 @@ jobs:
         with:
           node-version: 18.x
       - run: npm i -g caprover
-      - run: caprover deploy -h ${{ env.CAPHOVER_URL }} -p ${{ secrets.CAPROVER_TOKEN }} -a tainabichler-com-br --imageName ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_WEB2 }}:latest
+      - run: caprover deploy -h ${{ env.CAPHOVER_URL }} -p ${{ secrets.CAPROVER_TOKEN }} -a tainabichler-com-br --imageName ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_WEB }}:latest
       - run: sleep 30
